@@ -1,0 +1,261 @@
+/* Reset di base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Stili globali */
+  body {
+    background-color: #1c2526; /* Nero scuro */
+    color: #ffffff; /* Testo bianco */
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6;
+    min-height: 100vh;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  /* Tema chiaro */
+  body.light-mode {
+    background-color: #f5e6e6; /* Rosso chiaro per il tema chiaro */
+    color: #1c2526; /* Testo scuro */
+  }
+  
+  /* Contenitore principale */
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  /* Titolo */
+  h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #b22222; /* Rosso scuro */
+  }
+  
+  body.light-mode h1 {
+    color: #4a0e0e; /* Rosso più scuro per contrasto */
+  }
+  
+  /* Form di ricerca */
+  form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  input {
+    padding: 12px;
+    font-size: 1rem;
+    border: 2px solid #b22222;
+    border-radius: 8px;
+    background-color: #2a2a2a;
+    color: #ffffff;
+    width: 100%;
+    max-width: 400px;
+    transition: border-color 0.3s ease, background-color 0.3s ease;
+  }
+  
+  body.light-mode input {
+    background-color: #ffffff;
+    color: #1c2526;
+    border-color: #4a0e0e;
+  }
+  
+  input:focus {
+    outline: none;
+    border-color: #ff4040; /* Rosso più chiaro */
+  }
+  
+  /* Pulsanti */
+  button {
+    padding: 12px 24px;
+    font-size: 1rem;
+    font-weight: 600;
+    background-color: #b22222; /* Rosso scuro */
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #8b1a1a; /* Rosso più scuro */
+  }
+  
+  body.light-mode button {
+    background-color: #4a0e0e;
+  }
+  
+  body.light-mode button:hover {
+    background-color: #2e0707;
+  }
+  
+  /* Pulsante toggle tema */
+  #theme-toggle {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: #2a2a2a;
+    padding: 8px 16px;
+    font-size: 0.9rem;
+  }
+  
+  body.light-mode #theme-toggle {
+    background-color: #ffffff;
+    color: #1c2526;
+  }
+  
+  /* Messaggi di errore */
+  .error {
+    color: #ff5555; /* Rosso errore */
+    font-size: 1rem;
+    margin: 10px 0;
+  }
+  
+  body.light-mode .error {
+    color: #cc0000;
+  }
+  
+  /* Risultati */
+  .result {
+    margin: 20px 0;
+    text-align: left;
+    background-color: #2a2a2a;
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #b22222;
+    transition: background-color 0.3s ease;
+  }
+  
+  body.light-mode .result {
+    background-color: #ffffff;
+    border-color: #4a0e0e;
+  }
+  
+  .result h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #b22222;
+  }
+  
+  body.light-mode .result h3 {
+    color: #4a0e0e;
+  }
+  
+  .result p {
+    font-size: 1rem;
+  }
+  
+  /* Immagine risultato */
+  .result-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-top: 10px;
+    border: 2px solid #b22222;
+  }
+  
+  body.light-mode .result-image {
+    border-color: #4a0e0e;
+  }
+  
+  /* Cronologia */
+  .history {
+    margin: 20px 0;
+    text-align: left;
+    background-color: #2a2a2a;
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #b22222;
+  }
+  
+  body.light-mode .history {
+    background-color: #ffffff;
+    border-color: #4a0e0e;
+  }
+  
+  .history h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #b22222;
+  }
+  
+  body.light-mode .history h3 {
+    color: #4a0e0e;
+  }
+  
+  .history ul {
+    list-style: none;
+  }
+  
+  .history li {
+    font-size: 1rem;
+    color: #ff4040; /* Rosso chiaro */
+    cursor: pointer;
+    padding: 5px 0;
+    transition: color 0.3s ease;
+  }
+  
+  body.light-mode .history li {
+    color: #4a0e0e;
+  }
+  
+  .history li:hover {
+    color: #ffffff;
+    text-decoration: underline;
+  }
+  
+  body.light-mode .history li:hover {
+    color: #1c2526;
+  }
+  
+  .history button {
+    margin-top: 10px;
+  }
+  
+  /* Footer */
+  footer {
+    margin-top: 40px;
+    font-size: 0.9rem;
+    color: #888888;
+  }
+  
+  body.light-mode footer {
+    color: #4a0e0e;
+  }
+  
+  /* Responsive */
+  @media (max-width: 600px) {
+    .container {
+      padding: 10px;
+    }
+  
+    h1 {
+      font-size: 2rem;
+    }
+  
+    form {
+      flex-direction: column;
+    }
+  
+    input {
+      max-width: 100%;
+    }
+  
+    button {
+      width: 100%;
+    }
+  
+    #theme-toggle {
+      top: 10px;
+      right: 10px;
+      font-size: 0.8rem;
+    }
+  }
