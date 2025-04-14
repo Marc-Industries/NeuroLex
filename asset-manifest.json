@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/NeuroLex/static/css/main.c07b3ef8.css",
+    "main.js": "/NeuroLex/static/js/main.42805cf2.js",
+    "index.html": "/NeuroLex/index.html",
+    "main.c07b3ef8.css.map": "/NeuroLex/static/css/main.c07b3ef8.css.map",
+    "main.42805cf2.js.map": "/NeuroLex/static/js/main.42805cf2.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c07b3ef8.css",
+    "static/js/main.42805cf2.js"
+  ]
+}
