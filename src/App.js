@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import axios from 'axios';
-import { huggingFaceApiKey, pexelsApiKey } from './config';
+import { huggingFaceApiKey, pexelsApiKey } from './config.js';
 import './styles.css';
 
 function App() {
@@ -43,7 +43,7 @@ function App() {
       const defResponse = await axios.post(
         'https://api-inference.huggingface.co/models/mistralai/Mistral-7B-Instruct-v0.3',
         {
-          inputs: `Spiega in solo 8 parole quindi in modo super sintetico la parola "${word}"`,
+          inputs: `Spiega in solo 8 parole quindi in modo super sintetico (italiano) la parola "${word}"`,
           parameters: {
             max_new_tokens: 100,
             temperature: 0.2,
