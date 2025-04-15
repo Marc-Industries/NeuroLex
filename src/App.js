@@ -84,7 +84,7 @@ function App() {
       } else {
         // Pulizia della risposta
         console.log('Pulizia risposta:', defText);
-        defText = defText.replace(/Definisci "[^"]+" in italiano con 5-8 parole\./i, '').trim();
+        defText = defText.replace(/Definisci in solo 5 parole, super sintetico, la parola: "[^"]+" \./i, '').trim();
         const sentences = defText.split(/[.!?]/).filter(s => s.trim());
         defText = sentences[0]?.trim() || defText;
 
