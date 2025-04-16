@@ -90,13 +90,13 @@ function App() {
 
         const words = defText.split(/\s+/).filter(w => w.length > 0);
         console.log('Parole estratte:', words);
-        if (words.length > 8) {
-          defText = words.slice(0, 8).join(' ');
-          console.log('Troncato a 8 parole:', defText);
-        } else if (words.length < 5 && words.length > 0) {
-          defText = 'Definizione troppo breve.';
-          console.log('Definizione troppo breve');
-        }
+        //if (words.length > 8) {
+          //defText = words.slice(0, 8).join(' ');
+          //console.log('Troncato a 8 parole:', defText);
+        //} else if (words.length < 5 && words.length > 0) {
+          //defText = 'Definizione troppo breve.';
+          //console.log('Definizione troppo breve');
+        //}
         if (defText.length === 0) {
           defText = 'Nessuna definizione valida.';
           console.log('Nessuna definizione valida dopo pulizia');
