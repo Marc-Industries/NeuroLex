@@ -3,3 +3,4 @@ node_modules/
 src/config.js
 src/huggingface.py
 build/
+public/Neurolex
