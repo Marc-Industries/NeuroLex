@@ -231,7 +231,7 @@ function App() {
         </div>
       )}
       <footer>
-        <p>Powered by Hugging Face & Pexels</p>
+        <p>Powered by Deepinfra & Pexels</p>
       </footer>
     </div>
   );
